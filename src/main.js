@@ -483,7 +483,7 @@ const globalWeather = {
 	},
 };
 
-const OPENWEATHER_KEY = 'API-KEY-HERE';
+const OPENWEATHER_KEY = process.env.OPENWEATHER_KEY;
 const weatherService = new WeatherService(OPENWEATHER_KEY);
 
 weatherService.initializeGeolocation();
